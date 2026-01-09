@@ -1,3 +1,5 @@
+package main;
+
 public class FragileParcel extends Parcel implements Trackable {
     private static final int BASE_COST = 4;
 
@@ -12,7 +14,7 @@ public class FragileParcel extends Parcel implements Trackable {
     }
 
     @Override
-    public int getBaseCost() {
+    protected int getBaseCost() {
         return BASE_COST;
     }
 

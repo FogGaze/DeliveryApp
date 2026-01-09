@@ -1,3 +1,9 @@
+package test;
+
+import main.FragileParcel;
+import main.ParcelBox;
+import main.PerishableParcel;
+import main.StandardParcel;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

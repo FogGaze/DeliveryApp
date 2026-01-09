@@ -1,3 +1,5 @@
+package main;
+
 public class PerishableParcel extends Parcel {
     protected int timeToLive;
     protected boolean isExpired = false;
@@ -9,7 +11,7 @@ public class PerishableParcel extends Parcel {
     }
 
     @Override
-    public int getBaseCost() {
+    protected int getBaseCost() {
         return BASE_COST;
     }
 

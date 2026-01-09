@@ -1,3 +1,5 @@
+package main;
+
 import java.util.ArrayList;
 
 public class ParcelBox<T extends Parcel> {
@@ -25,7 +27,11 @@ public class ParcelBox<T extends Parcel> {
         }
     }
 
-    public void getAllParcels() {
+    public ArrayList<T> getAllParcels() {
+        return parcelBoxContent;
+    }
+
+    public void printAllParcels() {
         for (T parcel : parcelBoxContent) {
             System.out.println(parcel.getDescription());
         }

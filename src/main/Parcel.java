@@ -1,3 +1,5 @@
+package main;
+
 public abstract class Parcel {
     protected String description;
     protected double weight;

@@ -1,3 +1,5 @@
+package main;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -55,7 +57,6 @@ public class DeliveryApp {
     private static void addParcel() {
         // Подсказка: спросите тип посылки и необходимые поля, создайте объект и добавьте в allParcels
 
-
         System.out.println("Введите описание посылки");
         String description = scanner.nextLine();
 
@@ -108,7 +109,6 @@ public class DeliveryApp {
                     return;
 
                 case 3:
-                    System.out.println("Введите срок хранения посылки в днях:");
                     int timeToLive = 0;
                     while (true) {
                         System.out.println("Введите срок хранения посылки в днях:");
@@ -185,7 +185,7 @@ public class DeliveryApp {
                     System.out.println("Коробка пустая");
                 } else {
                     System.out.println("В коробке находится " + parcelBoxStandard.getParcelBoxContent().size() + " посылок");
-                    parcelBoxStandard.getAllParcels();
+                    parcelBoxStandard.printAllParcels();
                 }
                 break;
 
@@ -194,7 +194,7 @@ public class DeliveryApp {
                     System.out.println("Коробка пустая");
                 } else {
                     System.out.println("В коробке находится " + parcelBoxFragile.getParcelBoxContent().size() + " посылок");
-                    parcelBoxFragile.getAllParcels();
+                    parcelBoxFragile.printAllParcels();
                 }
                 break;
 
@@ -203,7 +203,7 @@ public class DeliveryApp {
                     System.out.println("Коробка пустая");
                 } else {
                     System.out.println("В коробке находится " + parcelBoxPerishable.getParcelBoxContent().size() + " посылок");
-                    parcelBoxPerishable.getAllParcels();
+                    parcelBoxPerishable.printAllParcels();
                 }
                 break;
 
